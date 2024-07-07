@@ -2,7 +2,7 @@
 # shellcheck disable=SC2086
 
 set -eE
-confhome=https://raw.githubusercontent.com/bin456789/reinstall/main
+confhome=https://raw.githubusercontent.com/minlearnminlearn/reinstall_fixedforaliyun/master
 github_proxy=https://mirror.ghproxy.com/https://raw.githubusercontent.com
 
 # https://www.gnu.org/software/gettext/manual/html_node/The-LANGUAGE-variable.html

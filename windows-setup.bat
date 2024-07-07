@@ -59,20 +59,13 @@ del X:\disk.txt
 rem 重新分区/格式化
 (if "%BootType%"=="efi" (
     echo select disk %DiskIndex%
+    echo clean
+    echo convert gpt
 
-    echo select part 1
-    echo delete part override
-    echo select part 2
-    echo delete part override
-    echo select part 3
-    echo delete part override
-
-    echo create part efi size=100
+    echo create partition efi size=200
     echo format fs=fat32 quick
 
-    echo create part msr size=16
-
-    echo create part primary
+    echo create partition primary
     echo format fs=ntfs quick
 ) else (
     echo select disk %DiskIndex%
